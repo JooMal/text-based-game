@@ -4,26 +4,33 @@
         <meta charset="utf-8">
         <title>The Witch Cat</title>
         <link href="css/reset.css" rel="stylesheet" type="text/css" />
+         <link rel="stylesheet" href="css/animation.css">
         <link href="css/main.css" rel="stylesheet" type="text/css" />
+       <link rel="stylesheet" href="css/play.css">
        <script src="js/jquery.1.12.4.js" type="text/javascript"></script>
     </head>
     <body>
+        <div class="background__01"></div>
+        <div class="overlay"></div>
         <section id="welcome" class="container">
-        <div class="contents">
-            <p class="contents__img">
-                <img src="images/main_image.jpg" alt="main image">
-            </p>
-            <h1 class="contents__title">The Witch Cat</h1>
-            <p class="contents__desc">게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명</p>
-            <hr class="w-line">
+            <div id="title-box">
+                <p class="contents__img">
+                    <img src="images/main_image.jpg" alt="main image">
+                </p>
+                <h1 class="contents__title">The Witch Cat</h1>
+                <p class="contents__desc">게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명게임설명</p>
+                <hr class="w-line">
+
+                <div id="name-input">
+                    <input type="text" placeholder="이 름" autofocus>
+                </div>
+                <div class="start-wrap">
+                    <button class="start" onclick = "location.href='html/play_1.html'"> START </button>
+                </div>
+            </div>
+        </section>
         
-            <div id="name-input">
-                <input type="text" placeholder="이 름" autofocus>
-            </div>
-            <div class="start-wrap">
-                <button class="start" onclick="location.href='../html/play_1.html'"> START </button>
-            </div>
-        </div>
+        
         </section>
     </body>
 </html>

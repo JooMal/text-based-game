@@ -1,15 +1,44 @@
 html, body {
     width: 100%;
     height: 100%;
-    background-color: saddlebrown;
 }
 
+.backimage, .background__01 {
+    width:100%;
+    height: 100%;
+    min-height: 100%;
+    background: url("../images/sand.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    background-color: black;
+    opacity:0.5;
+    z-index:10;
+}
+#welcome {
+    position: absolute;
+    top:0;
+    text-align: center;
+    font-family: "Malgun Gothic", sans-serif;
+    z-index:20;
+}
+
+#title-box {
+    text-align: center;
+    animation: fade-in 0.5s ease-out 0.3s both,
+        going-down 0.5s ease-out 0.3s both;
+    z-index:20;
+}
+
+/*
 .container {
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 20px 0 25px 0;
-    
+    padding: 20px 0 25px 0; 
 }
+*/
 .contents {
     text-align: center;
     position: absolute;
@@ -24,7 +53,8 @@ html, body {
 
 .contents__title {
     margin-bottom : 25px;
-    color: white;
+    color: black;
+    font-weight: bolder;
     font-size: 35px;
     
 }
@@ -41,6 +71,8 @@ html, body {
 #name-input {
     margin: 0px 20% 30px 20%;
     width: 200px;
+    border: solid 1px white;
+    border-radius: 12px;
     text-align: center;
 }
 #name-input > input {
@@ -49,16 +81,29 @@ html, body {
     line-height: 50%;
     font-size: 16px;
     text-align: center;
-    border: solid 2px brown;
-    border-radius: 12px;
 }
 .start-wrap {
     margin : 0px 20% 50px 20%;
     width: 60%;
+    border: 1px white;
+    border-radius: 12px;
 }
 .start {
     height: 50px;
     line-height: 50%;
     font-size: 48px;
     font-size: 3rem;
+    text-align: center;
+    animation: fade-in 0.5s ease-out 1.9s both,
+        going-down 0.5s ease-out 1.9s both,
+        start-flicker 0.5s infinite;
+    cursor: pointer;
+}
+
+.start:hover, .start:focus {
+    animation-play-state: paused;
+}
+
+.start:active {
+    animation-play-state: running;
 }
